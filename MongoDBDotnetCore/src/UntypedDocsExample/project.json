@@ -3,7 +3,6 @@
   "buildOptions": {
     "emitEntryPoint": true
   },
-
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
@@ -20,13 +19,11 @@
     "System.Reflection.Emit.Lightweight": "4.0.1",
     "MongoDB.Driver": "2.3.0-beta1"
   },
-
   "frameworks": {
     "netcoreapp1.0": {
       "imports": "dnxcore50"
     }
   },
-
   "tooling": {
     "defaultNamespace": "UntypedDocsExample"
   }
