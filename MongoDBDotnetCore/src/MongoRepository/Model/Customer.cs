@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace MongoRepository.Model
 {
-    public class Customer
+    public class Customer: Entity
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
