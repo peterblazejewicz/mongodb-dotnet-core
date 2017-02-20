@@ -1,6 +1,6 @@
 ﻿using System;
 using MongoDB.Driver;
-using TypedDocs.App.Model;
+using TypedDocs.Domain.Model;
 
 namespace TypedDocs.App
 {
@@ -10,7 +10,7 @@ namespace TypedDocs.App
         {
             var client = new MongoClient("mongodb://127.0.0.1:27017");
             var database = client.GetDatabase("foo");
-            var collection = database.GetCollection<Model.Person>("bar");
+            var collection = database.GetCollection<Person>("bar");
             collection.InsertOne(new Person { Name = "Jack" });
             var list = collection.Find(x => x.Name == "Jack")
                 .ToList();

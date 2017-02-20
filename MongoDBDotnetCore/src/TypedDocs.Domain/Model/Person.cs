@@ -1,6 +1,6 @@
 using MongoDB.Bson;
 
-namespace TypedDocs.App.Model
+namespace TypedDocs.Domain.Model
 {
     public class Person
     {
