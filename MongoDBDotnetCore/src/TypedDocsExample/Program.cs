@@ -1,4 +1,6 @@
 ﻿using System;
+using MongoDB.Driver;
+using TypedDocsExample.Model;
 
 namespace TypedDocsExample
 {
@@ -6,7 +8,16 @@ namespace TypedDocsExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var client = new MongoClient("mongodb://127.0.0.1:27017");
+            var database = client.GetDatabase("foo");
+            var collection = database.GetCollection<Model.Person>("bar");
+            collection.InsertOne(new Person { Name = "Jack" });
+            var list = collection.Find(x => x.Name == "Jack")
+                .ToList();
+            foreach (var person in list)
+            {
+                Console.WriteLine(person.Name);
+            }
         }
     }
 }
