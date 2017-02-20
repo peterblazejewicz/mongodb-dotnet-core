@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{67BA9C10-3828-41ED-BCA7-772AF7C83B63}"
 EndProject
-Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "TypedDocsExample", "src\TypedDocsExample\TypedDocsExample.csproj", "{0A483234-07FA-431A-8A1B-7C07B4E94021}"
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "TypedDocs.App", "src\TypedDocs.App\TypedDocs.App.csproj", "{0A483234-07FA-431A-8A1B-7C07B4E94021}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

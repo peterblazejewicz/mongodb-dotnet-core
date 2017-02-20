@@ -1,8 +1,8 @@
 ﻿using System;
 using MongoDB.Driver;
-using TypedDocsExample.Model;
+using TypedDocs.App.Model;
 
-namespace TypedDocsExample
+namespace TypedDocs.App
 {
     class Program
     {
